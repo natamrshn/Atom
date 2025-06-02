@@ -1,0 +1,62 @@
+@import '../../styles/vars.css';
+
+.button {
+  width: 271px;
+  height: 50px;
+  border-radius: 100px;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.2s ease;
+  border: 1px solid transparent;
+
+  &.primary {
+    &.filled {
+      background: var(--primary-color);
+      color: white;
+      border-color: var(--primary-color);
+
+      &:hover {
+        background: transparent;
+        color: var(--primary-color);
+      }
+    }
+
+    &.outlined {
+      background: transparent;
+      color: var(--primary-color);
+      border-color: var(--primary-color);
+      &:hover {
+        background: var(--primary-color);
+        color: white;
+      }
+    }
+  }
+
+  &.secondary {
+    &.filled {
+      background: var(--secondary-color);
+      color: white;
+      border-color: var(--secondary-color);
+      &:hover {
+        background: transparent;
+        color: var(--secondary-color);
+      }
+    }
+
+    &.outlined {
+      background: transparent;
+      color: var(--secondary-color);
+      border-color: var(--secondary-color);
+      &:hover {
+        background: var(--secondary-color);
+        color: white;
+      }
+    }
+  }
+
+  &:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+}
