@@ -1,0 +1,126 @@
+@import '../../styles/vars.css';
+
+.footer {
+  background-color: var(--color-background-footer-main);
+
+  &__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    column-gap: 30px;
+
+    margin: 0 auto;
+    max-width: 1300px;
+    padding: 80px 0 60px 0;
+
+    color: var(--color-black);
+  }
+
+  &__social {
+    display: flex;
+    flex-direction: column;
+    gap: 29px;
+
+    &-list {
+      display: flex;
+      gap: 10px;
+
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    &-link {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+  &__brand-name {
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+  }
+
+  &__contacts {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+    &-title {
+      font-size: 20px;
+      position: relative;
+      margin: 0 0 32px 0;
+
+      &::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 45px;
+        height: 2px;
+        background-color: #95BFFF;
+        border-radius: 2px;
+        bottom: -10px
+      }
+    }
+
+    &-list {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      gap: 13px;
+
+      font-size: 18px;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    &-item {
+      display: flex;
+      align-items: center;
+    }
+
+    &-link,
+    &-address {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+
+      text-decoration: none;
+      color: #000000;
+    }
+
+    &-icon {
+      width: 16px;
+      height: 16px;
+    }
+  }
+}
+
+.subfooter {
+  font-size: 18px;
+  color: var(--color-white);
+  background-color: var(--color-background-subfooter);
+  height: var(--height-subfooter);
+
+  &__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    gap: 30px;
+    
+    margin: 0 auto;
+    max-width: 1300px;
+    line-height: var(--height-subfooter);
+    list-style: none;
+  }
+
+  &__link {
+    color: var(--color-white);
+    text-decoration: none;
+  }
+}
