@@ -1,0 +1,20 @@
+.course__cards {
+  width: 1292px;
+  margin: 40px auto;
+  padding: 61px;
+  border-radius: 50px;
+  background-color: #f4f7fc;
+  box-sizing: border-box;
+
+  .cards__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+  }
+  .course__button {
+    display: flex;
+    justify-content: center;
+    margin-top: 75px;
+  }
+}
