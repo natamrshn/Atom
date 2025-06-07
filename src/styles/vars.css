@@ -2,4 +2,9 @@
   --primary-color: #f95c1b;
   --secondary-color: #6359e0;
   --font-family-open-sans: 'Open Sans', system-ui, Avenir, Helvetica, Arial, sans-serif;
+  --color-background-footer-main: #F1F1F1;
+  --color-black: #000000;
+  --color-white: #FFFFFF;
+  --color-background-subfooter: #6359E0;
+  --height-subfooter: 50px;
 }
