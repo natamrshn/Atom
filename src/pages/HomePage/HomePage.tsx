@@ -1,7 +1,9 @@
+import { CourseCards } from "../../components/CourseCards/CourseCards"
 
 const HomePage = () => {
   return (
-    <div>HomePage</div>
+    // <div>HomePage</div>
+    <CourseCards />
   )
 }
 
